@@ -15,7 +15,7 @@
 pre-commit:
   commands:
     sleep:
-      run: sleep 5
+      run: sleep 1
 # pre-commit:
 #   parallel: true
 #   commands:
