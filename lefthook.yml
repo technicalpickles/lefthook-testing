@@ -14,8 +14,8 @@
 #
 pre-commit:
   commands:
-    echo:
-      run: echo pre-commit running
+    sleep:
+      run: sleep 5
 # pre-commit:
 #   parallel: true
 #   commands:
@@ -37,4 +37,5 @@ pre-commit:
 #       runner: node
 #     "any.go":
 #       runner: go run
+# noise
 # noise
