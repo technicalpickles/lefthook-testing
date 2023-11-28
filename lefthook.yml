@@ -1,4 +1,5 @@
 pre-commit:
+  follow: true
   commands:
     sleep:
       run: sleep 2
