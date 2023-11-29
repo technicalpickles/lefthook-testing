@@ -2,6 +2,7 @@ pre-commit:
   follow: true
   commands:
     sleep:
+      interactive: false
       run: sleep 2
 # noise
 # noise
