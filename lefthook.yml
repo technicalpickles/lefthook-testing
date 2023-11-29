@@ -3,6 +3,7 @@ pre-commit:
   commands:
     sleep:
       interactive: false
+      use_stdin: false
       run: sleep 2
 # noise
 # noise
