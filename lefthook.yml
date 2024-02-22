@@ -4,17 +4,4 @@ pre-commit:
     sleep:
       interactive: false
       use_stdin: false
-      run: sleep 2
-# noise
-# noise
-# noise
-# noise
-# noise
-# noise
-# blah
-# blah
-# blah
-# blah
-# blah
-# blah
-# blah
+      run: sleep 4
