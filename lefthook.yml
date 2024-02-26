@@ -4,7 +4,12 @@ pre-commit:
     sleep:
       interactive: false
       use_stdin: false
+      run: sleep 4 && false
+post-checkout:
+  commands:
+    sleep:
       run: sleep 4
+# blah
 # blah
 # blah
 # blah
