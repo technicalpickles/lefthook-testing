@@ -5,6 +5,8 @@ pre-commit:
       interactive: false
       use_stdin: false
       run: sleep 4 && false
+    problem_detector:
+      run: bash -c 'if [ -f uncommitted.rb ]; then echo problem detected; exit 1; fi'
 post-checkout:
   commands:
     sleep:
@@ -15,3 +17,4 @@ post-checkout:
 # blah
 # blah
 # blah
+#
