@@ -3,3 +3,4 @@ pre-commit:
     contents_problem:
       run: bash -c 'if grep -q problem uncommitted.rb 2>/dev/null; then echo contents problem detected; exit 1; fi'
 #
+#
