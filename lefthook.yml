@@ -1,22 +1,5 @@
 pre-commit:
-  follow: true
   commands:
-    sleep:
-      interactive: false
-      use_stdin: false
-      run: sleep 4 && false
-    existence_problem:
-      run: bash -c 'if test -f uncommitted.rb; then echo problem detected; exit 1; fi'
     contents_problem:
-      run: bash -c 'if grep problem uncommitted.rb; then echo problem detected; exit 1; fi'
-post-checkout:
-  commands:
-    sleep:
-      run: sleep 4
-# blah
-# blah
-# blah
-# blah
-# blah
-# blah
+      run: bash -c 'if grep problem uncommitted.rb; then echo contents problem detected; exit 1; fi'
 #
