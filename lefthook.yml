@@ -1,9 +1,10 @@
 pre-commit:
   commands:
-    uncommitted_problem:
-      run: bash -c 'if test -f uncommitted.rb; then echo found problematic file; exit 1; fi'
+    untracked_problem:
+      run: bash -c 'if test -f untracked.rb; then echo found problematic file; exit 1; fi'
     unstaged_problem:
       run: bash -c 'if grep -q problem unstaged.rb 2>/dev/null; then echo found problematic change in file; exit 1; fi'
+#
 #
 #
 #
