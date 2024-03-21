@@ -1,5 +1,5 @@
 pre-commit:
   commands:
     contents_problem:
-      run: bash -c 'if grep problem uncommitted.rb; then echo contents problem detected; exit 1; fi'
+      run: bash -c 'if grep -q problem uncommitted.rb; then echo contents problem detected; exit 1; fi'
 #
